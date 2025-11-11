@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Syed Amaanuddin",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -9, "left": -87, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": 20.7, "left": 226.3, "attrs": {} }
+  ],
+  "connections": [
+    [ "ultrasonic1:VCC", "uno:5V", "red", [ "v86.4", "h-330.2" ] ],
+    [ "ultrasonic1:GND", "uno:GND.3", "black", [ "v0" ] ],
+    [ "ultrasonic1:TRIG", "uno:11", "green", [ "v-192", "h-384.4" ] ],
+    [ "ultrasonic1:ECHO", "uno:12", "gold", [ "v-172.8", "h-404" ] ]
+  ],
+  "dependencies": {}
+}
